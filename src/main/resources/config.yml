@@ -1,0 +1,81 @@
+# ================================
+#   ConvertPlugin - config.yml
+# ================================
+
+prefix: "&8[&6Convert&8] &r"
+
+# Ekonomi komutu
+# %player% = oyuncu adı, %amount% = miktar
+ekonomi-ver-komutu: "eco give %player% %amount%"
+
+# Chat mesaj formatı
+# %amount% = miktar, %item% = eşya adı, %para% = kazanılan para
+mesaj-format: "&8[&6Convert&8] &a%amount%x &e%item% &7sattınız! &a+%para% coin"
+
+# ================================
+#   FİYATLAR
+# ================================
+# Material adını büyük harfle yaz (Minecraft material isimleri)
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+fiyatlar:
+  # Elmaslar
+  DIAMOND: 100
+  DIAMOND_BLOCK: 900
+  DIAMOND_ORE: 150
+  DEEPSLATE_DIAMOND_ORE: 150
+
+  # Altın
+  GOLD_INGOT: 50
+  GOLD_BLOCK: 450
+  GOLD_ORE: 60
+  DEEPSLATE_GOLD_ORE: 60
+  RAW_GOLD: 45
+  RAW_GOLD_BLOCK: 400
+
+  # Demir
+  IRON_INGOT: 20
+  IRON_BLOCK: 180
+  IRON_ORE: 25
+  DEEPSLATE_IRON_ORE: 25
+  RAW_IRON: 18
+  RAW_IRON_BLOCK: 160
+
+  # Zümrüt
+  EMERALD: 75
+  EMERALD_BLOCK: 675
+  EMERALD_ORE: 90
+  DEEPSLATE_EMERALD_ORE: 90
+
+  # Kömür
+  COAL: 5
+  COAL_BLOCK: 45
+  COAL_ORE: 6
+
+  # Redstone
+  REDSTONE: 8
+  REDSTONE_BLOCK: 72
+  REDSTONE_ORE: 10
+
+  # Lapis
+  LAPIS_LAZULI: 10
+  LAPIS_BLOCK: 90
+  LAPIS_ORE: 12
+
+  # Netherite
+  NETHERITE_INGOT: 2000
+  NETHERITE_BLOCK: 18000
+  NETHERITE_SCRAP: 400
+  ANCIENT_DEBRIS: 500
+
+  # Quartz
+  QUARTZ: 15
+  QUARTZ_BLOCK: 60
+  NETHER_QUARTZ_ORE: 18
+
+  # Diğer
+  AMETHYST_SHARD: 20
+  AMETHYST_BLOCK: 160
+  COPPER_INGOT: 10
+  COPPER_BLOCK: 90
+  RAW_COPPER: 8
