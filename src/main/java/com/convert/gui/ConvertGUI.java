@@ -15,9 +15,7 @@ public class ConvertGUI {
 
     private final ConvertPlugin plugin;
 
-    // GUI layout:
-    // [0-35] = Eşya koyma slotları (4 satır)
-    // [36-44] = Alt çubuk: bilgi + onay + iptal
+    
 
     public static final int[] ESYA_SLOTLARI = {
         0,1,2,3,4,5,6,7,8,
@@ -39,7 +37,7 @@ public class ConvertGUI {
         Inventory inv = Bukkit.createInventory(null, 45,
                 plugin.renk("&6💱 Convert &8- &7Eşya Sat"));
 
-        // Alt çubuk ayraç
+        
         for (int i = 36; i < 45; i++) {
             inv.setItem(i, camItem(Material.BLACK_STAINED_GLASS_PANE, "&8"));
         }
