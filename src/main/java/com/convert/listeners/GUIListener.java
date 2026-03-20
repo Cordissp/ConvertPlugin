@@ -17,7 +17,7 @@ public class GUIListener implements Listener {
     private final ConvertPlugin plugin;
     private final ConvertGUI gui;
 
-    // getView().getTitle() yerine UUID seti kullanıyoruz - 1.20.1 uyumlu
+    
     private final Set<UUID> acikGui = new HashSet<>();
 
     private static final Set<Integer> KORUNAN_SLOTLAR = Set.of(
@@ -41,7 +41,7 @@ public class GUIListener implements Listener {
 
         int slot = event.getRawSlot();
 
-        // Korunan alt çubuk
+        
         if (KORUNAN_SLOTLAR.contains(slot)) {
             event.setCancelled(true);
 
@@ -61,7 +61,7 @@ public class GUIListener implements Listener {
             return;
         }
 
-        // Eşya slotu - 1 tick sonra toplamı güncelle
+        
         plugin.getServer().getScheduler().runTaskLater(plugin, () -> {
             if (oyuncu.isOnline() && acikGui.contains(oyuncu.getUniqueId())) {
                 gui.toplamGuncelle(oyuncu.getOpenInventory().getTopInventory());
@@ -95,7 +95,7 @@ public class GUIListener implements Listener {
 
         acikGui.remove(oyuncu.getUniqueId());
 
-        // Onaylamadan kapandı - eşyaları iade et
+        
         plugin.getServer().getScheduler().runTaskLater(plugin, () ->
                 esyalariGeriVer(oyuncu, event.getInventory()), 1L);
     }
